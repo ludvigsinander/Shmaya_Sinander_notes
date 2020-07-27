@@ -1,0 +1,47 @@
+% Copyright (c) 2020 Carl Martin Ludvig Sinander.
+
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+% GNU General Public License for more details.
+
+% You should have received a copy of the GNU General Public License
+% along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+\begin{tikzpicture}[scale=1]
+	
+	% f
+	%\draw[-,thick] (0,0)--(4,0);
+	\draw[-,thick] (0,0)--(3.95,0);
+	\draw[-,thick] (4,7/2)--(8,7/2);
+	\fill (4,7/2) circle[radius=1.5pt];
+	\draw (4,0) circle[radius=1.5pt];
+	\draw (6,7.2/2) node[anchor=south] {$f$};
+
+	% cav f
+	\draw[-,dotted,thick] (0,0)--(4,7/2);
+	\draw (2,3.8/2) node[anchor=east] {$\cav f$};
+
+	% axes
+	\draw[-] (0,0)--(8,0);
+	\draw[->] (0,0)--(0,8/2);
+
+	% axis labels
+	\draw (0,0) node[anchor=north east] {$0$};
+	\draw (8,0) node[anchor=north] {$1$};
+	\draw[-] (8,-0.075)--(8,0.075);
+	\draw (4,0) node[anchor=north] {$1/2$};
+	%\draw[-] (4,-0.075)--(4,0.075);
+	\draw (0,7/2) node[anchor=east] {$1$};
+	\draw[-] (-0.075,7/2)--(0.075,7/2);
+
+	
+	% fix up corners
+	\fill (-0.007,-0.007) rectangle (0.001,0.001);
+
+\end{tikzpicture}
